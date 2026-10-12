@@ -1,0 +1,22 @@
+name: Verify the public game
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the verification script
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify published page and lake data
+        env:
+          GAME_URL: https://vuoristo.github.io/fishing/
+        run: node scripts/verify-deployment.mjs
