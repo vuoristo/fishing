@@ -1,0 +1,42 @@
+{
+  "depth": {
+    "source": "Finnish Environment Institute (SYKE) WMS / National Land Survey of Finland topographic depth data",
+    "source_url": "https://paikkatiedot.ymparisto.fi/geoserver/wms",
+    "layer": "mert:syvyyskayra_vLine",
+    "bbox": [
+      25.85,
+      62.81,
+      26.03,
+      62.91
+    ],
+    "downloaded_at": "2026-10-12T01:02:23.697247+00:00",
+    "attribution": "Depth data: SYKE / National Land Survey of Finland.",
+    "license_reference": "https://www.maanmittauslaitos.fi/en/opendata-licence-cc40",
+    "service_access_constraints": "Lisenssi",
+    "coverage": "Unique complete contour features from 25 GetFeatureInfo sample locations. A sampled subset, not a complete lake survey. Game depths are interpolated estimates, not for navigation."
+  },
+  "shoreline": {
+    "source": "OpenStreetMap contributors",
+    "url": "https://www.openstreetmap.org/relation/444652",
+    "license": "ODbL 1.0",
+    "downloaded_at": "2026-10-12T01:02:23.697247+00:00",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "chart": {
+    "source_url": "https://paikkatiedot.ymparisto.fi/geoserver/wms",
+    "layers": "mert:syvyysalue_aPolygon,mert:syvyyskayra_vLine,mert:syvyyspiste_pPoint",
+    "bbox": [
+      25.53,
+      62.56,
+      26.46,
+      63.21
+    ],
+    "width": 1100,
+    "height": 1700
+  },
+  "sha256": {
+    "keitele-depth.geojson": "f7b769a63fb861e2ffc0a9e32efe1ad4ab17258cb2103f9a9797423b1d893bde",
+    "keitele-depth-chart.png": "1e77c4564504518d25ca043afc5acfd52f47b7195664bf8ad13dd64e18a8877c",
+    "keitele-shoreline.geojson": "472916a520a7aa9409e769fc188f5a98801596b306dfbdb03a572b1692ae5746"
+  }
+}
